@@ -1,5 +1,5 @@
 # BinanceLockedStakingCheck
-A simple Python script which checks the availability of Binance's locked stacking products and display a notification if a wanted product is available.
+A simple Python script which checks the availability of Binance's locked staking products and display a notification if a wanted product is available.
 Made for Windows but could be adapted to other OSs without major issues.
 
 Sample notification :
