@@ -18,6 +18,11 @@ driver.find_element_by_css_selector(".css-1r19zeh").click()  # Click on the expa
 time.sleep(1)  # Wait for loading
 
 
+# Scroll the modal multiple times to load all the assets
+for i in range(3):
+    driver.execute_script("""document.getElementById('modal-scroller').scrollTop = document.getElementById('modal-scroller').scrollHeight;""")
+    time.sleep(0.5)
+
 # Catching names of the provided crypto for locked stacking
 names = [name.text for name in driver.find_elements_by_css_selector("div#modal-scroller .css-1hm1xxl")]
 
